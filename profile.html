@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background:#f2f2f2;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .profile-card{
+            background:white;
+            padding:25px;
+            width:320px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-card img{
+            display:block;
+            margin:auto;
+            width:90px;
+            height:90px;
+            border-radius:50%;
+        }
+
+        h2{
+            text-align:center;
+        }
+
+        label{
+            font-size:14px;
+        }
+
+        input{
+            width:100%;
+            padding:8px;
+            margin:5px 0 10px 0;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            border:none;
+            background:#007bff;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="profile-card">
+
+    <img src="https://via.placeholder.com/100">
+
+    <h2>User Profile</h2>
+
+    <form>
+
+        <label>Họ và tên</label>
+        <input type="text" value="Lê Ngọc Vũ">
+
+        <label>Email</label>
+        <input type="email" value="vu@gmail.com">
+
+        <label>Số điện thoại</label>
+        <input type="text" value="0123456789">
+
+        <button type="submit">Lưu thông tin</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
