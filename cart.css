@@ -1,0 +1,34 @@
+body{
+    font-family: Arial;
+    text-align: center;
+}
+
+table{
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+input{
+    width: 50px;
+}
+
+button{
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.total{
+    margin-top: 20px;
+}
+
+.checkout{
+    background: green;
+    color: white;
+    border: none;
+}
