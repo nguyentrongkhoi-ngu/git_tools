@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Shop Online</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f5f5f5;
+}
+
+/* HEADER */
+
+header{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#ff4d4d;
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#333;
+}
+
+/* HERO */
+
+.hero{
+    height:450px;
+    background:linear-gradient(to right,#ff4d4d,#ff9966);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero button{
+    padding:15px 35px;
+    border:none;
+    background:white;
+    color:#ff4d4d;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* PRODUCT */
+
+.products{
+    padding:60px;
+}
+
+.products h2{
+    text-align:center;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:40px;
+}
+
+.product{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.product img{
+    width:100%;
+    border-radius:10px;
+}
+
+.price{
+    color:red;
+    font-weight:bold;
+}
+
+.product button{
+    margin-top:10px;
+    padding:10px 20px;
+    background:#ff4d4d;
+    color:white;
+    border:none;
+    border-radius:6px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:50px;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">MyShop</div>
+<nav>
+<a href="#">Trang chủ</a>
+<a href="#">Sản phẩm</a>
+<a href="#">Khuyến mãi</a>
+<a href="#">Liên hệ</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Sale 50% Hôm Nay</h1>
+<p>Mua ngay để nhận ưu đãi</p>
+<button>Mua ngay</button>
+</div>
+</section>
+
+<section class="products">
+<h2>Sản phẩm nổi bật</h2>
+
+<div class="product-grid">
+
+<div class="product">
+<img src="https://via.placeholder.com/200">
+<h3>Sản phẩm 1</h3>
+<p class="price">500.000đ</p>
+<button>Mua ngay</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/200">
+<h3>Sản phẩm 2</h3>
+<p class="price">600.000đ</p>
+<button>Mua ngay</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/200">
+<h3>Sản phẩm 3</h3>
+<p class="price">400.000đ</p>
+<button>Mua ngay</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/200">
+<h3>Sản phẩm 4</h3>
+<p class="price">700.000đ</p>
+<button>Mua ngay</button>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 MyShop - Website bán hàng</p>
+</footer>
+
+</body>
+</html>
