@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyShop</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f6f7fb;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 80px;
+background:white;
+box-shadow:0 3px 12px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:24px;
+font-weight:600;
+color:#ff4d4d;
+}
+
+nav a{
+margin:0 18px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ff4d4d;
+}
+
+/* HERO */
+
+.hero{
+height:520px;
+background:linear-gradient(120deg,#ff4d4d,#ff9966);
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:56px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.hero button{
+padding:15px 40px;
+border:none;
+border-radius:8px;
+background:white;
+color:#ff4d4d;
+font-weight:600;
+font-size:18px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+transform:scale(1.05);
+}
+
+/* PRODUCT SECTION */
+
+.products{
+padding:80px;
+}
+
+.products h2{
+text-align:center;
+font-size:32px;
+margin-bottom:50px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+/* PRODUCT CARD */
+
+.product{
+background:white;
+border-radius:14px;
+padding:20px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.product:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.product img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.product h3{
+margin-bottom:10px;
+}
+
+.price{
+color:#ff4d4d;
+font-weight:600;
+font-size:18px;
+margin-bottom:12px;
+}
+
+.product button{
+padding:10px 25px;
+border:none;
+background:#ff4d4d;
+color:white;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.product button:hover{
+background:#e60023;
+}
+
+/* PROMO SECTION */
+
+.promo{
+margin:60px 80px;
+background:linear-gradient(120deg,#6a11cb,#2575fc);
+border-radius:16px;
+padding:50px;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.promo h3{
+font-size:28px;
+}
+
+.promo button{
+padding:12px 30px;
+border:none;
+border-radius:8px;
+background:white;
+color:#2575fc;
+font-weight:600;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:80px;
+background:#111;
+color:#aaa;
+padding:40px;
+text-align:center;
+}
+
+footer p{
+margin-top:10px;
+font-size:14px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+header{
+padding:15px 25px;
+}
+
+.products{
+padding:40px 25px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.promo{
+flex-direction:column;
+gap:20px;
+text-align:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">MyShop</div>
+<nav>
+<a href="#">Trang chủ</a>
+<a href="#">Sản phẩm</a>
+<a href="#">Khuyến mãi</a>
+<a href="#">Liên hệ</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Sale Lớn 50%</h1>
+<p>Mua sắm ngay hôm nay để nhận ưu đãi tốt nhất</p>
+<button>Mua ngay</button>
+</div>
+</section>
+
+<section class="products">
+
+<h2>Sản phẩm nổi bật</h2>
+
+<div class="product-grid">
+
+<div class="product">
+<img src="https://via.placeholder.com/300">
+<h3>Áo Thun Nam</h3>
+<p class="price">250.000đ</p>
+<button>Thêm vào giỏ</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/300">
+<h3>Giày Sneaker</h3>
+<p class="price">850.000đ</p>
+<button>Thêm vào giỏ</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/300">
+<h3>Balo Thời Trang</h3>
+<p class="price">450.000đ</p>
+<button>Thêm vào giỏ</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/300">
+<h3>Đồng Hồ</h3>
+<p class="price">1.200.000đ</p>
+<button>Thêm vào giỏ</button>
+</div>
+
+</div>
+
+</section>
+
+<section class="promo">
+
+<h3>Nhận mã giảm giá 20% ngay hôm nay</h3>
+<button>Lấy mã</button>
+
+</section>
+
+<footer>
+
+<h3>MyShop</h3>
+<p>Website bán hàng uy tín</p>
+<p>© 2026 MyShop</p>
+
+</footer>
+
+</body>
+</html>
